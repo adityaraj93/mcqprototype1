@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstructionDialog</class>
+ <widget class="QDialog" name="InstructionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Instructions</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imageresource.qrc">
+    <normaloff>:/img/dc_logo.png</normaloff>:/img/dc_logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#1d1d1d;
+}
+QLabel{
+color: #ffffff;
+}
+QGroupBox{
+color: #ffffff;
+}
+QRadioButton{
+color:#ffffff;
+}
+QPushButton{
+border-style:solid;
+
+background-color:#3d3d3d;
+color:#fff;
+border-radius:7px;
+}
+QPushButton:hover{
+color:#ccc;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(45, 45, 45, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+	border-color:#2d89ef;
+border-width:2px;
+}
+
+QPushButton:pressed{
+background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}
+</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="India"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Instructions</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;1. This is a &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;30 minute&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; test with 30&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; questions&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;2. Each question carries &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00aa00;&quot;&gt;+1 mark&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; for right answer and &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;-0.33 marks&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; for wrong answer.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#c75050;&quot;&gt;0 mark&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; will be awarded for non attempted questions.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;4. The timer will start as soon as you click the Start Test Button below.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;5. Please &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;do not&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; use keyboard from here onwards.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;6. Use only mouse for any activity.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;7. Any use of keyboard will be seen as a cheating attempt.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;8. The scores will be automatically submitted as soon as time runs out, or you select the Submit button, which ever happens first.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;9. Each question has four options. Only &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;one&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; of them is &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00aa00;&quot;&gt;correct answer&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. There are no multiple correct answers.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;10. You can switch from one question to the next or previous question using Next or Previous button.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;11. You can use Unanswer button to remove your selected answer for any question.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCommandLinkButton" name="commandLinkButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Start Test!</string>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="imageresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

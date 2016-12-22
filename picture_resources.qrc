@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/college_banner">
+        <file>dc_logo.png</file>
+    </qresource>
+</RCC>

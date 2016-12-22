@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>dc_logo.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>dc_logo.ico</file>
+    </qresource>
+</RCC>
